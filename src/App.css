@@ -1,3 +1,8 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: inherit;
+  }
 .App {
   text-align: center;
 }
@@ -8,6 +13,14 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.home{
+  background-image: url("./images/Home1.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -26,7 +39,12 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+.an{
+  font-size:25px;
+  text-decoration: none;
+  color: #000;
+  
+}
 .App-link {
   color: #61dafb;
 }

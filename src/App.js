@@ -1,33 +1,19 @@
-import logo, { ReactComponent } from './logo.svg';
-import './App.css';
-import FacebookLogin from 'react-facebook-login';
-import React from 'react';
+import React, { Component } from 'react'
+import {Route,BrowserRouter as Router,Switch, Redirect} from "react-router-dom";
+import Home from './components/Home';
+import Login from'./components/Login'
 
-const responseFacebook = (response) => {
-  console.log("login result", response);
+export default class App extends Component {
+  render() {
+    return (
+      <div>
+        <Router>
+          <Switch>
+            <Route exact path="/" component={Home}></Route>
+            <Route path="/login" component={Login}></Route>
+          </Switch>
+        </Router>
+      </div>
+    )
+  }
 }
-
-const componentClicked=(data)=>{
-  console.warn(data)
-}
-
-
-class App extends React.Component {
-  render(){
-  return (
-    <div>
-    <h1 className="login"> LOGIN </h1>
-
-    <FacebookLogin
-    appId="411497496933523"
-    autoLoad={true}
-    fields="name,email,picture"
-    onClick={componentClicked}
-    callback={responseFacebook} />
-
-    </div>
-  );
-}
-}
-
-export default App;
