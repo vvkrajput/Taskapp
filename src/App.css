@@ -14,6 +14,12 @@ html, body {
   height: 40vmin;
   pointer-events: none;
 }
+.topbar{
+  height: 12vh;
+  width:100%;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
+  
+}
 
 .home{
   background-image: url("./images/Home1.jpg");
@@ -40,10 +46,17 @@ html, body {
   color: white;
 }
 .an{
-  font-size:25px;
+  font-size:20px;
   text-decoration: none;
   color: #000;
+ 
   
+}
+.sec{
+  height: 41vh;
+  width:95%;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
 }
 .App-link {
   color: #61dafb;
